@@ -1,0 +1,27 @@
+version: '3.9'
+services:
+  smtp-mock:
+    image: mailhog/mailhog:v1.0.1
+    networks:
+      - dddhexagonal
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+  postgres:
+    image: postgres:15.1
+    networks:
+      - dddhexagonal
+    extra_hosts:
+      - "host.docker.internal:${DOCKER_HOST_GATEWAY:-host-gateway}"
+    ports:
+      - "5442:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=dddhexagonal
+      - POSTGRES_HOST_AUTH_METHOD=trust
+
+networks:
+  dddhexagonal:
+    name: dddhexagonal

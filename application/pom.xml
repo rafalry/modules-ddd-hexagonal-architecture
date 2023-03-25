@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <artifactId>modules-ddd-hexagonal-architecture</artifactId>
+    <groupId>dddhexagonal</groupId>
+    <version>LATEST-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>application</artifactId>
+
+  <properties>
+    <jib-maven.version>3.2.1</jib-maven.version>
+    <newrelic-agent.version>7.10.0</newrelic-agent.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>dddhexagonal</groupId>
+      <artifactId>sample-onboarding-adapter-web</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>dddhexagonal</groupId>
+      <artifactId>sample-onboarding-adapter-email</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>dddhexagonal</groupId>
+      <artifactId>sample-user-management-adapter-web</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>dddhexagonal</groupId>
+      <artifactId>sample-user-management-adapter-email</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>dddhexagonal</groupId>
+      <artifactId>infrastructure-persistence</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>dddhexagonal</groupId>
+      <artifactId>infrastructure-session</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>dddhexagonal</groupId>
+      <artifactId>infrastructure-web</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>dddhexagonal</groupId>
+      <artifactId>infrastructure-email-gateway</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>dddhexagonal</groupId>
+      <artifactId>infrastructure-integration</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.tngtech.archunit</groupId>
+      <artifactId>archunit-junit5</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+          <mainClass>application.dddhexagonal.EisServiceApplication</mainClass>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>com.google.cloud.tools</groupId>
+        <artifactId>jib-maven-plugin</artifactId>
+        <version>${jib-maven.version}</version>
+        <configuration>
+          <to>
+            <image>ddd-hexagonal</image>
+            <tags>snapshot</tags>
+          </to>
+          <container>
+            <mainClass>dddhexagonal.application.UserManagementApplication</mainClass>
+            <creationTime>USE_CURRENT_TIMESTAMP</creationTime>
+          </container>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

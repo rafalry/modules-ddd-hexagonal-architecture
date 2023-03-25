@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <artifactId>module-sample-onboarding</artifactId>
+    <groupId>dddhexagonal</groupId>
+    <version>LATEST-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>sample-onboarding-application</artifactId>
+
+  <properties>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>dddhexagonal</groupId>
+      <artifactId>foundations-integration</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>dddhexagonal</groupId>
+      <artifactId>sample-onboarding-integration</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>dddhexagonal</groupId>
+      <artifactId>sample-onboarding-domain</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>dddhexagonal</groupId>
+      <artifactId>foundations-persistence</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>dddhexagonal</groupId>
+      <artifactId>foundations-application</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>dddhexagonal</groupId>
+      <artifactId>foundations-test-application</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.testcontainers</groupId>
+      <artifactId>testcontainers</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.testcontainers</groupId>
+      <artifactId>postgresql</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.testcontainers</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+</project>

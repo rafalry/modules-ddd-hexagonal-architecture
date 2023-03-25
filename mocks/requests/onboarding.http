@@ -1,0 +1,27 @@
+### Create onboarding template
+POST {{origin}}/api/onboarding/v1/templates
+Content-Type: application/json
+
+{
+  "name": "template-1",
+  "documentNames": [
+    "document-1"
+  ]
+}
+
+### Get onboarding template
+GET {{origin}}/api/onboarding/v1/templates/_
+
+### List onboarding template
+GET {{origin}}/api/onboarding/v1/templates
+
+
+
+### Sign onboarding document
+POST {{origin}}/api/onboarding/v1/operations/271f20e5-810a-4109-894e-6d457b71214b/documents/801780f0-a499-4989-80c2-f63adff62bdb/sign
+
+### Sign onboarding document
+POST {{origin}}/api/onboarding/v1/operations/271f20e5-810a-4109-894e-6d457b71214b/documents/801780f0-a499-4989-80c2-f63adff62bdb/accept
+
+### Sign onboarding document
+POST {{origin}}/api/onboarding/v1/operations/_/documents/_/reject

@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: eis-service
+  config:
+    import: classpath:application_infrastructure_persistence.yaml
+server:
+  port: 8082
