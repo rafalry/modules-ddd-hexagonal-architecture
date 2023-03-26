@@ -42,6 +42,7 @@ public class OnboardingEmailSenderAdapter implements EmailSenderPort {
 
   @Override
   public void sendDocumentRejectedEmail(String email, UUID documentId) {
+    log.info("[EMAIL to={}] Document {} rejected.", email, documentId);
     emailGateway.send(email, ACCEPTED_SUBJECT, "");
 
   }
@@ -49,6 +50,7 @@ public class OnboardingEmailSenderAdapter implements EmailSenderPort {
 
   @Override
   public void sendOnboardingCancelledEmail(String email) {
+    log.info("[EMAIL to={}] Onboarding cancelled.", email);
     emailGateway.send(email, CANCELLED_SUBJECT, "");
 
   }

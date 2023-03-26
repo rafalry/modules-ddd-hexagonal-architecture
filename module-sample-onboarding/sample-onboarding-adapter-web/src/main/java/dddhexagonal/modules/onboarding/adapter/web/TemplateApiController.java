@@ -41,7 +41,7 @@ public class TemplateApiController {
 
 
   @GetMapping("{id}")
-  public OnboardingTemplateAggregateRoot create(@PathVariable UUID id){
+  public OnboardingTemplateAggregateRoot get(@PathVariable UUID id){
     return templateUseCases.get(id);
   }
 

@@ -3,7 +3,7 @@ POST {{origin}}/api/users/v1/users
 Content-Type: application/json
 
 {
-    "email": "user17@example.org",
+    "email": "user01@example.org",
     "triggerOnboarding": true
 }
 

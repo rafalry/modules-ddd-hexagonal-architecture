@@ -18,10 +18,10 @@ GET {{origin}}/api/onboarding/v1/templates
 
 
 ### Sign onboarding document
-POST {{origin}}/api/onboarding/v1/operations/271f20e5-810a-4109-894e-6d457b71214b/documents/801780f0-a499-4989-80c2-f63adff62bdb/sign
+POST {{origin}}/api/onboarding/v1/operations/30e376da-b1df-462b-b8c4-80dbba0ba9f0/documents/9ebf4371-9866-402d-88cf-95a9cc915912/sign
 
 ### Sign onboarding document
-POST {{origin}}/api/onboarding/v1/operations/271f20e5-810a-4109-894e-6d457b71214b/documents/801780f0-a499-4989-80c2-f63adff62bdb/accept
+POST {{origin}}/api/onboarding/v1/operations/30e376da-b1df-462b-b8c4-80dbba0ba9f0/documents/9ebf4371-9866-402d-88cf-95a9cc915912/accept
 
 ### Sign onboarding document
 POST {{origin}}/api/onboarding/v1/operations/_/documents/_/reject
