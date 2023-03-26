@@ -26,7 +26,7 @@ public class PackageNamesInModulesArchitectureTest {
 
       @Override
       public Pattern getUriPattern() {
-        return compile(".*eis-services/module-[a-zA-Z0-9-_]+/.*");
+        return compile(".*modules-ddd-hexagonal-architecture/module-[a-zA-Z0-9-_]+/.*");
       }
     }
   }

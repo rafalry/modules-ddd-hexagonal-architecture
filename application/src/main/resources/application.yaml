@@ -1,6 +1,6 @@
 spring:
   application:
-    name: eis-service
+    name: d3h
   config:
     import: classpath:application_infrastructure_persistence.yaml
 server:
