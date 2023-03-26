@@ -1,6 +1,3 @@
-/*
- * Copyright (c) 2000-2023, Efinity Sp. z o.o. All rights reserved.
- */
 package dddhexagonal.modules.user.application.adapter.email;
 
 import lombok.extern.slf4j.Slf4j;

@@ -1,6 +1,3 @@
-/*
- * Copyright (c) 2000-2023, Efinity Sp. z o.o. All rights reserved.
- */
 
 package dddhexagonal.modules.user.domain.user.rules;
 
