@@ -18,7 +18,6 @@
     <module>infrastructure-email-gateway</module>
     <module>infrastructure-integration</module>
     <module>infrastructure-leader-election</module>
-    <module>infrastructure-eis-coverholder-client</module>
   </modules>
 
 </project>
