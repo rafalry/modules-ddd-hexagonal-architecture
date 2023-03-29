@@ -37,7 +37,7 @@ public class PackageNamesInModulesArchitectureTest {
 
       @Override
       public Pattern getUriPattern() {
-        return compile(".*eis-services/module-[a-zA-Z0-9-_]+/([a-zA-Z0-9-_]+/)?[a-zA-Z0-9-_]+-adapter-[a-zA-Z0-9-_]+.*");
+        return compile(".*modules-ddd-hexagonal-architecture/module-[a-zA-Z0-9-_]+/([a-zA-Z0-9-_]+/)?[a-zA-Z0-9-_]+-adapter-[a-zA-Z0-9-_]+.*");
       }
     }
   }
@@ -52,7 +52,7 @@ public class PackageNamesInModulesArchitectureTest {
 
       @Override
       public Pattern getUriPattern() {
-        return compile(".*eis-services/(module-[a-zA-Z0-9-_]+/)?module-[a-zA-Z0-9-_]+/[a-zA-Z0-9-_]+-domain/.*");
+        return compile(".*modules-ddd-hexagonal-architecture/(module-[a-zA-Z0-9-_]+/)?module-[a-zA-Z0-9-_]+/[a-zA-Z0-9-_]+-domain/.*");
       }
     }
   }
@@ -67,7 +67,7 @@ public class PackageNamesInModulesArchitectureTest {
 
       @Override
       public Pattern getUriPattern() {
-        return compile(".*eis-services/(module-[a-zA-Z0-9-_]+/)?module-[a-zA-Z0-9-_]+/[a-zA-Z0-9-_]+-application/.*");
+        return compile(".*modules-ddd-hexagonal-architecture/(module-[a-zA-Z0-9-_]+/)?module-[a-zA-Z0-9-_]+/[a-zA-Z0-9-_]+-application/.*");
       }
     }
   }
@@ -82,7 +82,7 @@ public class PackageNamesInModulesArchitectureTest {
 
       @Override
       public Pattern getUriPattern() {
-        return compile(".*eis-services/(module-[a-zA-Z0-9-_]+/)?module-[a-zA-Z0-9-_]+/[a-zA-Z0-9-_]+-infrastructure[a-zA-Z0-9-_]+/.*");
+        return compile(".*modules-ddd-hexagonal-architecture/(module-[a-zA-Z0-9-_]+/)?module-[a-zA-Z0-9-_]+/[a-zA-Z0-9-_]+-infrastructure[a-zA-Z0-9-_]+/.*");
       }
     }
   }
@@ -97,7 +97,7 @@ public class PackageNamesInModulesArchitectureTest {
 
       @Override
       public Pattern getUriPattern() {
-        return compile(".*eis-services/(module-[a-zA-Z0-9-_]+/)?module-[a-zA-Z0-9-_]+/[a-zA-Z0-9-_]+-integration/.*");
+        return compile(".*modules-ddd-hexagonal-architecture/(module-[a-zA-Z0-9-_]+/)?module-[a-zA-Z0-9-_]+/[a-zA-Z0-9-_]+-integration/.*");
       }
     }
   }
@@ -112,7 +112,7 @@ public class PackageNamesInModulesArchitectureTest {
 
       @Override
       public Pattern getUriPattern() {
-        return compile(".*eis-services/(module-[a-zA-Z0-9-_]+/)?foundations/foundations-[a-zA-Z0-9-_]+/.*");
+        return compile(".*modules-ddd-hexagonal-architecture/(module-[a-zA-Z0-9-_]+/)?foundations/foundations-[a-zA-Z0-9-_]+/.*");
       }
     }
   }
