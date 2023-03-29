@@ -1,4 +1,4 @@
-package dddhexagonal.modules.user.application.adapter.email;
+package dddhexagonal.modules.user.adapter.email;
 
 import lombok.extern.slf4j.Slf4j;
 
