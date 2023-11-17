@@ -73,7 +73,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
         <configuration>
-          <mainClass>application.dddhexagonal.EisServiceApplication</mainClass>
+          <mainClass>dddhexagonal.application.UserManagementApplication</mainClass>
         </configuration>
       </plugin>
       <plugin>
